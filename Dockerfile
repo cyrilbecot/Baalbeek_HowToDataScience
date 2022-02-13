@@ -5,6 +5,8 @@ RUN apt-get install -y pip wget unzip
 
 RUN pip install notebook pandas geopandas seaborn jupyterlab statsmodels tensorflow keras sklearn xgboost
 
+RUN apt-get install -y libcudnn
+
 RUN mkdir /Work
 
 WORKDIR /Work
